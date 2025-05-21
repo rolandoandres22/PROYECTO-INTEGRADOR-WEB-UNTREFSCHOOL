@@ -1,0 +1,37 @@
+/* Estilo base para todos los botones de navegación */
+.nav-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 15px;
+    background-color: #0273bf;
+    outline: 3px #0273bf solid;
+    outline-offset: -3px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 0.9em;
+    font-family: "Belanosima", sans-serif;
+    white-space: nowrap;
+}
+
+/* Efecto hover para todos los botones */
+.nav-button:hover {
+    background-color: transparent;
+    color: #0273bf;
+}
+
+/* Estilo especial para el botón de contacto */
+.active {
+    background-color: #FC7300; 
+    outline-color: #FC7300;
+}
+
+.active:hover {
+    color: #FC7300;
+}
