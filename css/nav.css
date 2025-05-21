@@ -1,3 +1,27 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin: 0 auto;
+    padding: 0;
+    align-items: center;
+}
+
+.menu li {
+    margin: 0;
+    padding: 0;
+}
+
 /* Estilo base para todos los botones de navegación */
 .nav-button {
     display: flex;
@@ -35,3 +59,49 @@
 .active:hover {
     color: #FC7300;
 }
+        /* Botón hamburguesa (oculto en desktop) */
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: #0273bf;
+        }
+        
+        
+        /* Media queries para responsive */
+        @media (max-width: 1000px) {
+           
+                .nav-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 8px;
+    gap: 10px;
+    background-color: #0273bf;
+    outline: 3px #0273bf solid;
+    outline-offset: -3px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 0.7em;
+    font-family: "Belanosima", sans-serif;
+    white-space: nowrap;
+
+            }
+            
+        }
+         @media (max-width: 768px) {
+         .nav-button span{
+            display: none;
+         }
+         .nav-button{
+                font-size: 1em;
+            min-width: 40px;
+         }
+        }
