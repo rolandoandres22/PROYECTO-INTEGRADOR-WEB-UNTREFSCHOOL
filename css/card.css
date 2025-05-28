@@ -59,7 +59,7 @@
   text-align: center;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .about-container {
     flex-direction: column;
     align-items: center;
@@ -70,7 +70,7 @@
   }
 }
 /* aplica a 320px tambien */
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .card {
 padding: 5px;
   }

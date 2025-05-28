@@ -44,7 +44,7 @@
   transition: background-color 0.3s ease;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .noticia {
     flex: 1 1 100%;
   }

@@ -67,7 +67,7 @@ section h1{
     top: 4px;
 }
         
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .about-container {
         flex-direction: column;
     }
@@ -78,7 +78,7 @@ section h1{
     }
 }
 /* aplica para 320 tambien */
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
     section{
     padding: 30px 25px;
 }

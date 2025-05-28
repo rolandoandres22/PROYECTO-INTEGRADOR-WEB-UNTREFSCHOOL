@@ -85,31 +85,60 @@ color: #FC7300;
 }
           
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 .nav-button span{
 display: none;
 }
-.nav-button{
-font-size: 1em;
-min-width: 40px;
+.nav-button span :hover{
+display: block;
 }
+/* metodo que enseño marcelo con target para pintar el boton seleccionado sin utilizar java */
+#quienes-somos:target~header nav .nav-button[href="#quienes-somos"] span,
+#por-que-elegirnos:target~header nav .nav-button[href="#por-que-elegirnos"] span,
+#propuesta-educativa:target~header nav .nav-button[href="#propuesta-educativa"] span,
+#ultimas-noticias:target~header nav .nav-button[href="#ultimas-noticias"] span,
+#contacto:target~header nav .nav-button[href="#contacto"] span {
+   transition: 0.5s;
+display:block;
+
 }
 
-@media (max-width: 480px) {
+.nav-button{
+font-size: 0.9em;
+min-width: 40px;
+}
+
+/* esto es para contact, al ser una pagina a parte pinto el boton de prepo con una clase .active */
+.active span:hover{
+display: block;
+}
+/* hover de la clase active */
+.active span{
+display: block;
+} 
+}
+
+@media screen and (max-width: 480px) {
 .menu {
   gap: 10px;
 }
 .nav-button{
   padding: 10px 7px;
+  font-size: 0.8em;
+min-width: 30px;
 }
 }
 
-@media (max-width: 325px) {
+@media screen and (max-width: 400px) {
   .menu {
   gap: 5px;
 }
 .nav-button{
-  gap: 2px;
+  gap: 3px;
   padding: 10px 2px;
+}
+.nav-button{
+font-size: 0.8em;
+
 }
 }

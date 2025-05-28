@@ -35,7 +35,7 @@
 .about-contact .btn-c{
     width: 200px;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .about-contact {
     grid-template-columns: 1fr;
   }
@@ -47,7 +47,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media screen and (max-width: 320px) {
   .about-contact {
     gap: 20px;
       padding: 0 10px;
