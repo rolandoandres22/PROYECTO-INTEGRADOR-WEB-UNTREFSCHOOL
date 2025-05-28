@@ -89,9 +89,7 @@ color: #FC7300;
 .nav-button span{
 display: none;
 }
-.nav-button span :hover{
-display: block;
-}
+
 /* metodo que enseño marcelo con target para pintar el boton seleccionado sin utilizar java */
 #quienes-somos:target~header nav .nav-button[href="#quienes-somos"] span,
 #por-que-elegirnos:target~header nav .nav-button[href="#por-que-elegirnos"] span,
@@ -108,10 +106,7 @@ font-size: 0.9em;
 min-width: 40px;
 }
 
-/* esto es para contact, al ser una pagina a parte pinto el boton de prepo con una clase .active */
-.active span:hover{
-display: block;
-}
+
 /* hover de la clase active */
 .active span{
 display: block;
@@ -135,7 +130,7 @@ min-width: 30px;
 }
 .nav-button{
   gap: 3px;
-  padding: 10px 2px;
+  padding: 10px 3px;
 }
 .nav-button{
 font-size: 0.8em;
