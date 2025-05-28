@@ -90,7 +90,7 @@ color: #FC7300;
 display: none;
 }
 
-/* metodo que enseño marcelo con target para pintar el boton seleccionado sin utilizar java */
+/* si el boton esta targeteado se muestre el texto */
 #quienes-somos:target~header nav .nav-button[href="#quienes-somos"] span,
 #por-que-elegirnos:target~header nav .nav-button[href="#por-que-elegirnos"] span,
 #propuesta-educativa:target~header nav .nav-button[href="#propuesta-educativa"] span,
@@ -100,14 +100,24 @@ display: none;
 display:flex;
 
 }
+/*mismo efecto que sin hover sino queda apretado el hover en google chrome de android*/
+#quienes-somos:target~header nav .nav-button[href="#quienes-somos"]:hover,
+#por-que-elegirnos:target~header nav .nav-button[href="#por-que-elegirnos"]:hover,
+#propuesta-educativa:target~header nav .nav-button[href="#propuesta-educativa"]:hover,
+#ultimas-noticias:target~header nav .nav-button[href="#ultimas-noticias"]:hover,
+#contacto:target~header nav .nav-button[href="#contacto"]:hover {
+     background-color: #FC7300; 
+    outline-color: #FC7300;
+      color: white;
 
+}
 .nav-button{
 font-size: 0.9em;
 min-width: 40px;
 }
 
 
-/* hover de la clase active */
+/* hover de la clase active si esta pintado se muestre el texto*/
 .active span{
 display:flex;
 } 
