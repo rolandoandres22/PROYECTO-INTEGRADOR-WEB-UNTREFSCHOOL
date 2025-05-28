@@ -97,7 +97,7 @@ display: none;
 #ultimas-noticias:target~header nav .nav-button[href="#ultimas-noticias"] span,
 #contacto:target~header nav .nav-button[href="#contacto"] span {
    transition: 0.5s;
-display:block;
+display:flex;
 
 }
 
@@ -109,7 +109,7 @@ min-width: 40px;
 
 /* hover de la clase active */
 .active span{
-display: block;
+display:flex;
 } 
 }
 
