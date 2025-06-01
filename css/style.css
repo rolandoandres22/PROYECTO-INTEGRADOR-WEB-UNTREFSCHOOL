@@ -14,7 +14,11 @@ Paleta-de-colores{
     color:#181823;
     color:#EFF5F5;
  } 
- 
+ /* se agrego esto que vi en un vieo de instagram para que se desplase mas lento las section */
+*{
+    scroll-behavior: smooth;
+}
+
 body {
     display: flex;
     flex-direction: column;
